@@ -36,8 +36,6 @@ public class GestionLibros extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 153, 255));
 
-        lblLogo.setText("jLabel1");
-
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("GESTIONAR LIBROS");
 
