@@ -32,8 +32,6 @@ public class Inicio extends javax.swing.JFrame {
         BTNregistro = new javax.swing.JButton();
         BTNingreso = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(204, 153, 255));
 
         lblLogo.setText("LOGO");
@@ -50,6 +48,7 @@ public class Inicio extends javax.swing.JFrame {
 
         TXTusuario.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         TXTusuario.setText("USUARIO");
+        TXTusuario.setToolTipText("Usuario");
         TXTusuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TXTusuarioActionPerformed(evt);
@@ -130,6 +129,10 @@ public class Inicio extends javax.swing.JFrame {
 
     private void BTNregistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNregistroActionPerformed
         // TODO add your handling code here:
+        Registro registro = new Registro();
+        registro.setLocationRelativeTo(null);
+        registro.setResizable(false);
+        registro.setVisible(true);
     }//GEN-LAST:event_BTNregistroActionPerformed
 
     private void BTNingresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNingresoActionPerformed

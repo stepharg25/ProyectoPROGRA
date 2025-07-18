@@ -1,5 +1,7 @@
 package gestionbiblioteca;
+
 public class Registro extends javax.swing.JFrame {
+
     public Registro() {
         initComponents();
         // Cargar imagen y escalar al tamaño del JLabel
@@ -17,8 +19,9 @@ public class Registro extends javax.swing.JFrame {
         lblLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblLogo.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
         lblLogo.setText(""); // Quita el texto del label
-    
+
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -26,10 +29,10 @@ public class Registro extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
         lblTITULO = new javax.swing.JLabel();
-        TXTusuario = new javax.swing.JTextField();
-        TXTcontrasena = new javax.swing.JTextField();
+        JtxtUsuario = new javax.swing.JTextField();
+        JtxtConstrasena = new javax.swing.JTextField();
         BTNregistro = new javax.swing.JButton();
-        CMBroles = new javax.swing.JComboBox<>();
+        cmbRoles = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,9 +43,9 @@ public class Registro extends javax.swing.JFrame {
         lblTITULO.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblTITULO.setText("REGISTRARSE EN EL SISTEMA");
 
-        TXTusuario.setText("USUARIO");
+        JtxtUsuario.setToolTipText("USUARIO");
 
-        TXTcontrasena.setText("CONTRASEÑA");
+        JtxtConstrasena.setToolTipText("CONTRASEÑA");
 
         BTNregistro.setText("REGISTRARSE");
         BTNregistro.addActionListener(new java.awt.event.ActionListener() {
@@ -51,7 +54,7 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
-        CMBroles.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "Admin" }));
+        cmbRoles.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "Admin" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -68,10 +71,10 @@ public class Registro extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(188, 188, 188)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(TXTcontrasena, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TXTusuario, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JtxtConstrasena, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JtxtUsuario, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(52, 52, 52)
-                .addComponent(CMBroles, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cmbRoles, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -84,12 +87,12 @@ public class Registro extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addComponent(TXTusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JtxtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(TXTcontrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(JtxtConstrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(65, 65, 65)
-                        .addComponent(CMBroles, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cmbRoles, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(53, 53, 53)
                 .addComponent(BTNregistro)
                 .addContainerGap(135, Short.MAX_VALUE))
@@ -111,6 +114,26 @@ public class Registro extends javax.swing.JFrame {
 
     private void BTNregistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNregistroActionPerformed
         // TODO add your handling code here:
+
+        if (JtxtUsuario.getText().isEmpty() || JtxtConstrasena.getText().isEmpty()) {
+            System.out.println("Rellenar Campos");
+            return;
+        }
+
+        if (cmbRoles.getSelectedItem().equals("Estudiante")) {
+            HomeEstudiante homeEstudiante = new HomeEstudiante();
+
+            homeEstudiante.setLocationRelativeTo(null);
+            homeEstudiante.setResizable(false);
+            homeEstudiante.setVisible(true);
+
+        } else if (cmbRoles.getSelectedItem().equals("Admin")) {
+            HomeAdmin homeAdmin = new HomeAdmin();
+
+            homeAdmin.setLocationRelativeTo(null);
+            homeAdmin.setResizable(false);
+            homeAdmin.setVisible(true);
+        }
     }//GEN-LAST:event_BTNregistroActionPerformed
 
     public static void main(String[] args) {
@@ -127,9 +150,9 @@ public class Registro extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTNregistro;
-    private javax.swing.JComboBox<String> CMBroles;
-    private javax.swing.JTextField TXTcontrasena;
-    private javax.swing.JTextField TXTusuario;
+    private javax.swing.JTextField JtxtConstrasena;
+    private javax.swing.JTextField JtxtUsuario;
+    private javax.swing.JComboBox<String> cmbRoles;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblTITULO;
