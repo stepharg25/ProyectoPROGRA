@@ -1,47 +1,35 @@
 package Clases;
 
-import java.util.ArrayList;
-
 public class Libro {
+
     private int id;
-    private Autor autor;
-    private Categoria categoria;
+    private String titulo;
+    private int autorId;
+    private int categoriaId;
     private boolean disponible;
-    private ArrayList<Reserva> reservasPendientes;
 
-    public Libro() {
-    }
-
-    public Libro(int id, Autor autor, Categoria categoria, boolean disponible, ArrayList<Reserva> reservasPendientes) {
+    public Libro(int id, String titulo, int autorId, int categoriaId, boolean disponible) {
         this.id = id;
-        this.autor = autor;
-        this.categoria = categoria;
+        this.titulo = titulo;
+        this.autorId = autorId;
+        this.categoriaId = categoriaId;
         this.disponible = disponible;
-        this.reservasPendientes = reservasPendientes;
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public Autor getAutor() {
-        return autor;
+    public int getAutorId() {
+        return autorId;
     }
 
-    public void setAutor(Autor autor) {
-        this.autor = autor;
-    }
-
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
+    public int getCategoriaId() {
+        return categoriaId;
     }
 
     public boolean isDisponible() {
@@ -51,15 +39,4 @@ public class Libro {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
-
-    public ArrayList<Reserva> getReservasPendientes() {
-        return reservasPendientes;
-    }
-
-    public void setReservasPendientes(ArrayList<Reserva> reservasPendientes) {
-        this.reservasPendientes = reservasPendientes;
-    }
-    
-    
-    
 }

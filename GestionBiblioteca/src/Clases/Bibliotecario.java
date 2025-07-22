@@ -1,17 +1,8 @@
 package Clases;
 
-public class Bibliotecario extends Usuario{
-    
-    public Bibliotecario(int id, String nombre, String coreo, String contrasena, String rol) {
-        super(id, nombre, coreo, contrasena, rol);
+public class Bibliotecario extends Usuario {
+
+    public Bibliotecario(int id, String nombre, String correo, String contrasena) {
+        super(id, nombre, correo, contrasena);
     }
-    
-    public void gestionarInventario(){
-        
-    }
-    
-    public void consultarReportes(){
-        
-    }
-    
 }
