@@ -56,11 +56,11 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="TXTcontrasena" alignment="0" max="32767" attributes="0"/>
-                      <Component id="TXTusuario" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                      <Component id="JtxtConstrasena" alignment="0" max="32767" attributes="0"/>
+                      <Component id="JtxtUsuario" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                  <Component id="CMBroles" min="-2" pref="160" max="-2" attributes="0"/>
+                  <Component id="cmbRoles" min="-2" pref="160" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -76,13 +76,13 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                          <Component id="TXTusuario" min="-2" max="-2" attributes="0"/>
+                          <Component id="JtxtUsuario" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="TXTcontrasena" min="-2" max="-2" attributes="0"/>
+                          <Component id="JtxtConstrasena" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                          <Component id="CMBroles" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbRoles" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
@@ -106,14 +106,14 @@
             <Property name="text" type="java.lang.String" value="REGISTRARSE EN EL SISTEMA"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="TXTusuario">
+        <Component class="javax.swing.JTextField" name="JtxtUsuario">
           <Properties>
-            <Property name="text" type="java.lang.String" value="USUARIO"/>
+            <Property name="toolTipText" type="java.lang.String" value="USUARIO"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="TXTcontrasena">
+        <Component class="javax.swing.JTextField" name="JtxtConstrasena">
           <Properties>
-            <Property name="text" type="java.lang.String" value="CONTRASE&#xd1;A"/>
+            <Property name="toolTipText" type="java.lang.String" value="CONTRASE&#xd1;A"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="BTNregistro">
@@ -124,7 +124,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTNregistroActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="CMBroles">
+        <Component class="javax.swing.JComboBox" name="cmbRoles">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="2">
