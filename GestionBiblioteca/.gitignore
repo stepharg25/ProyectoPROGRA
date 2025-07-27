@@ -1,7 +1,0 @@
-*.class
-build/
-dist/
-out/
-nbproject/
-.idea/
-*.iml

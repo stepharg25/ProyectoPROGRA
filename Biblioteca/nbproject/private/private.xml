@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/Categoria.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/ConsultaCategorias.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/Libro.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/controlador/ControladorLogin.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/vista/LibroForm.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/Usuario.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/ConsultaLibros.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/vista/LoginForm.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/vista/AutorForm.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/ConsultasAutores.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/Autor.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/vista/RegisterForm.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/controlador/ControladorRegistro.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/ConexionBD.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/controlador/ControladorLibro.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/modelo/ConsultasUsuario.java</file>
+            <file>file:/C:/Users/Juanpa/Desktop/GIHUB/ProyectoPROGRA/Biblioteca/src/crudmvc/crudMVC.java</file>
+        </group>
+    </open-files>
+</project-private>
